@@ -44,10 +44,10 @@ function App() {
             <strong>No.of Votes: </strong>50
           </p>
           <p>
-            <strong>Lead by </strong> +50
+            <strong>Lead by: </strong> +50
           </p>
           <p>
-            <strong>Win Chances </strong> 50%
+            <strong>Win Chances: </strong> 50%
           </p>
         </div>
         <div>
@@ -62,10 +62,10 @@ function App() {
             <strong>No.of Votes: </strong>50
           </p>
           <p>
-            <strong>Lead by </strong> +50
+            <strong>Lead by: </strong> +50
           </p>
           <p>
-            <strong>Win Chances </strong> 50%
+            <strong>Win Chances: </strong> 50%
           </p>
         </div>
       </div>
