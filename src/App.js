@@ -6,17 +6,21 @@ function App() {
   const [num2, setNum2] = useState(0)
   const [total, setTotal] = useState(num1 + num2)
   const [chance, setChance] = useState()
+  const [leadby, setLeadby] = useState(0)
+
+  const leadbyy = num1 - num2
 
   function calculate() {
+    const change = (num1 / total).toFixed(3)
     setTotal(num1 + num2)
-    const change = num1 / total
-
     return <div>{setChance(change * 100)}</div>
   }
 
   return (
     <div className="App">
       <h1>Chance Calculator</h1>
+      <p>no of votes for balen: {num1}</p>
+      <p>no of votes for Keshav: {num2}</p>
       <div className="numberInputs">
         <input
           type="number"
@@ -41,13 +45,14 @@ function App() {
           />
           <h1>Balendra Shah</h1>
           <p>
-            <strong>No.of Votes: </strong>50
+            <strong>No.of Votes: </strong>
+            {num1}
           </p>
           <p>
-            <strong>Lead by: </strong> +50
+            <strong>Lead by: </strong> {num1 - num2}
           </p>
           <p>
-            <strong>Win Chances: </strong> 50%
+            <strong>Win Chances: </strong> {chance}%
           </p>
         </div>
         <div>
@@ -59,13 +64,14 @@ function App() {
           />
           <h1>Keshav Sthapit </h1>
           <p>
-            <strong>No.of Votes: </strong>50
+            <strong>No.of Votes: </strong>
+            {num2}
           </p>
           <p>
-            <strong>Lead by: </strong> +50
+            <strong>Lead by: </strong> {num2 - num1}
           </p>
           <p>
-            <strong>Win Chances: </strong> 50%
+            <strong>Win Chances: </strong> {100 - chance}%
           </p>
         </div>
       </div>
