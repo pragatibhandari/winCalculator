@@ -1,4 +1,4 @@
-# Calculator APP
+# Calculator Application
 
 # Getting Started with Create React App
 
